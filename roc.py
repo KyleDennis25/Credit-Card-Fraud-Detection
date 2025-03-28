@@ -14,7 +14,7 @@ def roc_plot(y_test, y_pred_prob, roc_auc):
     plt.legend(loc="lower right") 
     plt.show()
 '''
-This function plots the auc(receiver operating characteristic) curve of a classifier.
+This function plots the roc(receiver operating characteristic) curve of a binary classifier.
 
 Parameters
 ----------
