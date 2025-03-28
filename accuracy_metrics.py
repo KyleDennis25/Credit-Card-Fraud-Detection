@@ -4,9 +4,8 @@ def calculate_metrics(y_true, y_pred):
     # Create metric dictionary
     metric_dict = {
         "accuracy": accuracy_score(y_true, y_pred),
-        "precision(y=1)": precision_score(y_true, y_pred, average='binary'),
-        "recall": recall_score(y_true, y_pred, average="weighted"),
-        "f1-score": f1_score(y_true, y_pred, average="weighted")
+        "precision": precision_score(y_true, y_pred, average='binary'),
+        "recall": recall_score(y_true, y_pred, average='binary')
     }
     return metric_dict
 '''
