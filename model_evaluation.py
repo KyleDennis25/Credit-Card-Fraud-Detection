@@ -1,4 +1,4 @@
-from sklearn.metrics import accuracy_score, precision_score, recall_score, roc_curve
+from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, roc_curve
 from sklearn.model_selection import StratifiedKFold, cross_val_score
 import matplotlib.pyplot as plt
 
@@ -6,8 +6,9 @@ def calculate_metrics(y_true, y_pred):
     # Create metric dictionary
     metric_dict = {
         "accuracy": accuracy_score(y_true, y_pred),
-        "precision": precision_score(y_true, y_pred, average='binary'),
-        "recall": recall_score(y_true, y_pred, average='binary')
+        "precision": precision_score(y_true, y_pred),
+        "recall": recall_score(y_true, y_pred),
+        "f1 score": f1_score(y_true, y_pred)
     }
     return metric_dict
 '''
