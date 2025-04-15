@@ -67,8 +67,9 @@ def roc_plot(y_test, y_pred_prob, roc_auc):
     plt.plot([0, 1], [0, 1], 'k--', label='Random classifier') 
     plt.xlabel('False Positive Rate') 
     plt.ylabel('True Positive Rate') 
-    plt.title('ROC Curve') 
     plt.legend(loc="lower right") 
+    # Save plot to computer
+    plt.savefig("roc_curve.png")
     plt.show()
 '''
 This function plots the roc(receiver operating characteristic) curve of a binary classifier.
