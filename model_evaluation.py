@@ -1,4 +1,4 @@
-from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, roc_curve
+from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, precision_recall_curve
 from sklearn.model_selection import StratifiedKFold, cross_val_score
 import matplotlib.pyplot as plt
 
@@ -58,19 +58,18 @@ Scores.mean(): float
 Average accuracy from cross validation.
 '''
 
-def roc_plot(y_test, y_pred_prob, roc_auc):
-    # Calculate the false positive rate(fpr) and true positive rate(tpr) for different classification thresholds 
-    fpr, tpr, thresholds = roc_curve(y_test, y_pred_prob, pos_label=1)
-    # Plot the ROC curve 
-    plt.plot(fpr, tpr, label='ROC curve (area = %0.2f)' % roc_auc) 
-    # roc curve for tpr = fpr  
-    plt.plot([0, 1], [0, 1], 'k--', label='Random classifier') 
-    plt.xlabel('False Positive Rate') 
-    plt.ylabel('True Positive Rate') 
-    plt.legend(loc="lower right") 
+def auc_plot(y_test, y_pred_prob, pr_auc):
+    # Calculate precision and recall for PR-AUC curve
+    precision, recall, thr = precision_recall_curve(y_test, y_pred_prob, pos_label=1)
+    # Plot the PR curve
+    plt.plot(recall, precision, label='PR curve (area = %0.2f)' % pr_auc)
+    plt.xlabel('Recall')
+    plt.ylabel('Precision')
+    plt.legend(loc="lower left")
     # Save plot to computer
-    plt.savefig("roc_curve.png")
+    plt.savefig("pr_curve.png", dpi=300)
     plt.show()
+
 '''
 This function plots the roc(receiver operating characteristic) curve of a binary classifier.
 
