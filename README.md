@@ -1,4 +1,4 @@
-# Fitting a Logistic Regression Model From Scratch
+# Evaluating the Performance of Machine Learning Models for Credit Card Fraud Detection Using SMOTE
 
 This is my senior capstone project from Quinnipiac. In this project, I evaluate the performance of several machine learning models when used to predict credit card fraud. I used SMOTE oversampling to address the dataset imbalance, and investigated how this affects model performance. 
 
