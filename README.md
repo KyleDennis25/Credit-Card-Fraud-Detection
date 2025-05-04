@@ -5,7 +5,7 @@ This is my senior capstone project from Quinnipiac. In this project, I evaluate 
 # File Descriptions
 **Report.md**- Comprehensive project report, which includes the mathematical background to the optimization procedure used throughout the project.
 
-**fraud_distribution.py**- Python file containing a helper function that calculates the distribution of fraudulent credit card transactions in a given target vector.
+**fraud_distribution.py**- Python file containing a helper function that calculates the distribution of fraudulent credit card transactions in a given 'y' vector.
 
 **model_evaluation.py**- Python file containing helper functions for different model evaluation tasks, such as computing accuracy metrics, and plotting Precision-Recall Curves.
 
@@ -13,7 +13,7 @@ This is my senior capstone project from Quinnipiac. In this project, I evaluate 
 
 **smote.py**- Python file containing a helper function for performing SMOTE oversampling on a given training set.
 
-**train_and_pred.py**- Python file containing a helper function that trains a given model, and makes predictions on a test set.
+**train_and_pred.py**- Python file containing a helper function that trains a given model, and makes predictions on a given test set.
 
 # Dataset
 The dataset used is from Kaggle- https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud
