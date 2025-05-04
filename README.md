@@ -1,6 +1,6 @@
 # Evaluating the Performance of Machine Learning Models for Credit Card Fraud Detection Using SMOTE
 
-This is my senior capstone project from Quinnipiac. In this project, I evaluate the performance of several machine learning models when used to predict credit card fraud. I used SMOTE oversampling to address the dataset imbalance, and investigated how this affects model performance. 
+This is my senior capstone project from Quinnipiac. In this project, I evaluate the performance of several machine learning models when used to predict credit card fraud. I used SMOTE oversampling to address dataset imbalance, and investigated how this affects model performance. 
 
 # File Descriptions
 **Report.docx**- Complete project report, in which I discuss the background to this problem, and I evaluate and interpret the results (and their real-world implications).
