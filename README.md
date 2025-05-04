@@ -2,7 +2,7 @@
 
 This is my senior capstone project from Quinnipiac. In this project, I evaluate the performance of several machine learning models when used to predict credit card fraud from real transactions. I used SMOTE oversampling to address dataset imbalance, and investigated how this affects model performance. 
 
-# File Descriptions
+## File Descriptions
 **Report.docx**- Complete project report, in which I discuss the background to this problem, and I evaluate and interpret the results (and their real-world implications).
 
 **fraud_distribution.py**- Python file containing a helper function that calculates the distribution of fraudulent credit card transactions in a given 'y' vector.
@@ -15,5 +15,5 @@ This is my senior capstone project from Quinnipiac. In this project, I evaluate 
 
 **train_and_pred.py**- Python file containing a helper function that trains a given model, and makes predictions on a given test set.
 
-# Dataset
+## Dataset
 The dataset used is from Kaggle- https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud
