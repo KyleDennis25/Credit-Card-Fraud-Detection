@@ -1,13 +1,19 @@
 # Fitting a Logistic Regression Model From Scratch
 
-This is my senior capstone project from Quinnipiac. In this project, I evaluate the performance of several machine learning models when used to predict credit card fraud. I used SMOTE to address the dataset imbalance, and investigated how this affects model performance. 
+This is my senior capstone project from Quinnipiac. In this project, I evaluate the performance of several machine learning models when used to predict credit card fraud. I used SMOTE oversampling to address the dataset imbalance, and investigated how this affects model performance. 
 
 # File Descriptions
 **Report.md**- Comprehensive project report, which includes the mathematical background to the optimization procedure used throughout the project.
 
-**functions.py**- Python file which contains functions used for model fitting.
+**fraud_distribution.py**- Python file containing a helper function that calculates the distribution of fraudulent credit card transactions in a given target vector.
 
-**test_case**- Python test case file. This file uses functions from functions.py to manually fit a logistic regression model, from data import to parameter convergence. 
+**model_evaluation.py**- Python file containing helper functions for different model evaluation tasks, such as computing accuracy metrics, and plotting Precision-Recall Curves.
+
+**project.ipynb**- Jupyter notebook containing all project steps, from data cleaning to model evaluation.
+
+**smote.py**- Python file containing a helper function for performing SMOTE oversampling on a given training set.
+
+**train_and_pred.py**- Python file containing a helper function that trains a given model, and makes predictions on a test set.
 
 # Dataset
-The dataset used is from Kaggle. Here is a link: https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud
+The dataset used is from Kaggle- https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud
