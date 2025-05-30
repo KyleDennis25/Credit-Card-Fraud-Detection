@@ -18,14 +18,14 @@ predictions.
 Parameters
 ----------
 y_true: 1D NumPy array
-Actual y values(actual class labels).
+Actual y values (actual class labels).
 
 y_pred: 1D NumPy array
-Predicted y values(predicted class labels).
+Predicted y values (predicted class labels).
 
 Returns
 -------
-metric_dict: dictionary(4 key-value pairs)
+metric_dict: dictionary (4 key-value pairs)
 Dictionary containing various accuracy metrics of model predictions.
 '''
 
@@ -36,7 +36,7 @@ def stratified_cv(model, X, y, num_splits):
     cv_scores = cross_val_score(model, X, y, cv=stratified_kfold, scoring='accuracy')  
     return cv_scores.mean()
 '''
-This function calculates average cross validated accuracy of some scikit-learn models.
+This function calculates average cross validated accuracy of selected scikit-learn models (stratified).
 
 Parameters
 ----------
@@ -49,13 +49,13 @@ Predictor variables for model training.
 y: 1D Pandas Series
 Response variable for model training.
 
-numSplits: int
+num_splits: int
 Number of folds in cross validation
 
 Returns
 -------
 Scores.mean(): float
-Average accuracy from cross validation.
+Average accuracy from stratified cross validation.
 '''
 
 def auc_plot(y_test, y_pred_prob, pr_auc):
@@ -81,6 +81,6 @@ Test set y for model evalutation.
 y_pred_prob: 2D NumPy Array
 Model classification probabilities.
 
-roc_auc: float
-auc value of model.
+pr_auc: float
+pr-auc value of model.
 '''
