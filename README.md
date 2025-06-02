@@ -2,7 +2,7 @@
 
 This project was completed as part of my senior capstone at Quinnipiac University. I evaluated the performance of several machine learning models when used to predict credit card fraud using real transaction data. To address the dataset’s severe class imbalance, I applied SMOTE oversampling and analyzed how this affected model performance.
 
-This project highlights the critical trade-offs between metrics like precision, recall, and F1 score when dealing with imbalanced data. By experimenting with different SMOTE samples, I demonstrated how this sampling technique significantly impacts a model’s effectiveness — a key insight for deploying machine learning solutions in high-stakes, real-world scenarios like fraud detection. 
+This project highlights the critical trade-offs between metrics like precision, recall, and F1 score when dealing with imbalanced data. By experimenting with different SMOTE samples, I demonstrated how this sampling technique significantly impacts a model’s effectiveness — a key insight for deploying machine learning models in high-stakes, real-world scenarios like fraud detection. 
 
 ## File Descriptions
 **Report.docx**- Complete project report, in which I discuss the background to the problem and evaluate and interpret the results, including their real-world implications.
