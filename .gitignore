@@ -12,3 +12,5 @@ pr_auc_point_plot.png
 pr_curve.png
 Report.pdf
 roc_curve.png
+*.pyc
+
