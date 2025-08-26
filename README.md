@@ -7,15 +7,15 @@ This project highlights the critical trade-offs between metrics like precision, 
 ## File Descriptions
 **Report.docx**- Complete project report, in which I discuss the background to the problem and evaluate and interpret the results, including their real-world implications.
 
-**fraud_distribution.py**- Python file containing a helper function that calculates the distribution of fraudulent credit card transactions in a given 'y' vector.
-
-**model_evaluation.py**- Python file containing helper functions for different model evaluation tasks, such as computing accuracy metrics, and plotting Precision-Recall Curves.
-
 **project.ipynb**- Jupyter notebook containing all project steps, from data cleaning to model evaluation.
 
-**smote.py**- Python file containing a helper function for performing SMOTE oversampling on a given training set.
+**helpers/fraud_distribution.py**- Python file containing a helper function that calculates the distribution of fraudulent credit card transactions in a given 'y' vector.
 
-**train_and_pred.py**- Python file containing a helper function that trains a given model, and makes predictions on a given test set.
+**helpers/model_evaluation.py**- Python file containing helper functions for different model evaluation tasks, such as computing accuracy metrics, and plotting Precision-Recall Curves.
+
+**helpers/smote.py**- Python file containing a helper function for performing SMOTE oversampling on a given training set.
+
+**helpers/train_and_pred.py**- Python file containing a helper function that trains a given model, and makes predictions on a given test set.
 
 ## Dataset
 The dataset used is from Kaggle- https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud
