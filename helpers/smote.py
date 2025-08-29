@@ -1,5 +1,6 @@
 from imblearn.over_sampling import SMOTE
 
+
 def smote_sampling(X, y, sample_proportion):
     # Oversample minority class based on "sample_proportion"(see description below)
     smote = SMOTE(random_state=16, sampling_strategy=sample_proportion)
