@@ -2,6 +2,7 @@ from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_sc
 from sklearn.model_selection import StratifiedKFold, cross_val_score
 import matplotlib.pyplot as plt
 
+
 def calculate_metrics(y_true, y_pred):
     # Create metric dictionary
     metric_dict = {
@@ -29,6 +30,7 @@ metric_dict: dictionary (4 key-value pairs)
 Dictionary containing various accuracy metrics of model predictions.
 '''
 
+
 def stratified_cv(model, X, y, num_splits):
     # Initialize StratifiedKFold
     stratified_kfold = StratifiedKFold(n_splits=num_splits, shuffle=True, random_state=14)
@@ -41,7 +43,7 @@ This function calculates average cross validated accuracy of selected scikit-lea
 Parameters
 ----------
 model: object
-A scikit-learn model object
+A scikit-learn model object.
 
 X: 2D Pandas dataframe
 Predictor variables for model training.
@@ -50,13 +52,14 @@ y: 1D Pandas Series
 Response variable for model training.
 
 num_splits: int
-Number of folds in cross validation
+Number of folds in cross validation.
 
 Returns
 -------
 Scores.mean(): float
 Average accuracy from stratified cross validation.
 '''
+
 
 def auc_plot(y_test, y_pred_prob, pr_auc):
     # Calculate precision and recall for PR-AUC curve
@@ -71,7 +74,7 @@ def auc_plot(y_test, y_pred_prob, pr_auc):
     plt.show()
 
 '''
-This function plots the roc(receiver operating characteristic) curve of a binary classifier.
+This function plots the roc (receiver operating characteristic) curve of a binary classifier.
 
 Parameters
 ----------
