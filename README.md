@@ -5,17 +5,18 @@ This project was completed as part of my senior capstone at Quinnipiac Universit
 This project highlights the critical trade-offs between metrics like precision, recall, and F1 score when dealing with imbalanced data. By experimenting with different SMOTE samples, I demonstrated how this sampling technique significantly impacts a model’s effectiveness — a key insight for deploying machine learning models in high-stakes, real-world scenarios like fraud detection. 
 
 ## File Descriptions
-**Report.docx**- Complete project report, in which I discuss the background to the problem and evaluate and interpret the results, including their real-world implications.
+**Report.docx** - Complete project report, in which I discuss the background to the problem and evaluate and interpret the results, including their real-world implications.
 
-**project.ipynb**- Jupyter notebook containing all project steps, from data cleaning to model evaluation.
+**project.ipynb** - Jupyter notebook containing all project steps, from data cleaning to model evaluation.
 
-**helpers/fraud_distribution.py**- Python file containing a helper function that calculates the distribution of fraudulent credit card transactions in a given 'y' vector.
+**helpers/fraud_distribution.py** - Python file containing a helper function that calculates the distribution of fraudulent credit card transactions in a given 'y' vector.
 
-**helpers/model_evaluation.py**- Python file containing helper functions for different model evaluation tasks, such as computing accuracy metrics, and plotting Precision-Recall Curves.
+**helpers/model_evaluation.py** - Python file containing helper functions for different model evaluation tasks, such as computing accuracy metrics, and plotting Precision-Recall Curves.
 
-**helpers/smote.py**- Python file containing a helper function for performing SMOTE oversampling on a given training set.
+**helpers/smote.py** - Python file containing a helper function for performing SMOTE oversampling on a given training set.
 
-**helpers/train_and_pred.py**- Python file containing a helper function that trains a given model, and makes predictions on a given test set.
+**helpers/train_and_pred.py** - Python file containing a helper function that trains a given model, and makes predictions on a given test set.
 
 ## Dataset
-The dataset used is from Kaggle- https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud
+The dataset used is from Kaggle: [Credit Card Fraud Detection](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud)
+
